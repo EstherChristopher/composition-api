@@ -1,19 +1,23 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <CounterComponent msg="1"/>
+  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <SettingsProvider>
+    <ThemeButton />
+  </SettingsProvider>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import CounterComponent from './components/CounterComponent.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import SettingsProvider from "./components/SettingsProvider.vue";
+import ThemeButton from "./components/ThemeButton.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HelloWorld,
-    CounterComponent
-  }
-}
+    SettingsProvider,
+    ThemeButton
+  },
+};
 </script>
 
 <style>
